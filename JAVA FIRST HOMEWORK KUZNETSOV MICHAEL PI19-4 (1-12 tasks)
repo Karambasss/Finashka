@@ -1,0 +1,265 @@
+import java.util.Scanner;
+
+/* Problem 1
+Первая прога!
+class Main 
+{
+
+  public static void main(String[] args) 
+  {
+    String a  = "Hello World";
+
+    System.out.println(a);
+  }
+}
+*/
+
+
+/* PRoGRAM 2
+class Main 
+{
+
+  public static void main(String[] args) 
+  {
+    int a = 4;
+
+    System.out.println(a);
+  }
+}
+
+*/
+
+
+
+/* PR 3
+class Main
+{
+        
+  public static void main(String[] args) 
+  {
+    int a = 4, b = 4, c = 4, d = 4; // Объявление переменной
+
+    d = a + 1; 
+    
+    b++; 
+
+    //int e = 14 - b++; //e = 10; b = 5
+
+    //int e = 14 - ++b; // e = 9; b = 5
+    ++c;
+
+    a += 1; // а = а + 1
+
+    System.out.println("а = " + a);
+
+    System.out.println("d = " + d);
+
+    System.out.println("c = " + c);
+
+    System.out.println("b = " + b);
+  }
+}
+*/
+
+
+/* PR 4
+class Main 
+{
+
+  public static void main(String[] args) 
+  {
+    int a = 4; 
+
+    int b = 5;
+
+    int c = 0;
+
+    c = a;
+    a = b;
+    b = c;
+
+    System.out.println("а = " + a);
+    System.out.println("b = " + b);
+  }
+  
+}
+
+*/
+
+
+
+/* PR 5
+
+class Main 
+{
+
+  public static void main(String[] args) 
+  {
+    
+    double a = 1.05;
+
+    double b = 3.05;
+
+    double f = a*a + b*b;
+
+    
+    double c = Math.sqrt(f);
+    
+
+    System.out.println(c);
+  }
+}
+
+*/
+
+/* PR 6
+
+class Main 
+{
+  public static void main(String[] args)
+  {
+    int a = 105;
+
+    int qwerty = a % 10;
+
+    System.out.println(qwerty);
+  }
+}
+
+*/
+
+
+/* PG 7
+class Main 
+{
+  public static void main(String[] args)
+  {
+    int a = 105;
+     
+    int b = a / 10; // b = 10
+    
+    b = b % 10; // b = 0
+
+
+    System.out.println(b);
+
+    
+
+  }
+}
+
+*/
+
+/* PG 8
+class Main
+{
+  public static void main(String[] args)
+  {
+    int a = 105, b = 0;
+
+    b = a / 10;
+
+    int cnt = 0;
+//
+    //while (b > 0)
+    //{
+      b = b / 10
+    //  cnt = cnt  + 1;
+    //   b = b / 10;
+    //}
+//
+    System.out.println(b);
+  }
+}
+
+*/ 
+
+/* PG 9
+
+class Main 
+{
+
+  static int myfunction(int a) 
+  {
+     return a - 21;
+  }
+
+  public static void main(String[] args)
+  {
+
+    int d;
+
+    d = myfunction(55);
+    
+    System.out.println(d);
+  }
+}
+
+*/ 
+
+
+/* PG 10
+class Main 
+{
+
+  static double f2(int a, int b) 
+  {
+     double d = ( (double)a + (double)b ) / 2;
+     return d;
+  }
+
+  public static void main(String[] args)
+  {
+
+    double d;
+
+    d = f2(55, 77);
+    
+    System.out.println(d);
+  }
+}
+*/ 
+
+/* PG 11
+class Main 
+{
+
+  static double f2(int a, int b) 
+  {
+    double c = Math.sqrt(a*b);
+    return c;
+  }
+
+  public static void main(String[] args)
+  {
+
+    double d;
+
+    d = f2(55, 77);
+    
+    System.out.println(d);
+  }
+}
+*/
+
+/* PG 12
+class Main 
+{
+  // double = плавающая точка
+  static double f2(double x1, double y1, double x2, double y2) 
+  {
+    return Math.sqrt( (x1-x2)*(x1-x2) + (y1-y2)*(y1-y2) );
+  }
+
+  public static void main(String[] args)
+  {
+
+    double d;
+
+    d = f2(2.0, 5.0, 7.0, 10.0);
+    
+    System.out.println(d);
+  }
+}
+
+*/
