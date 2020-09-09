@@ -1,0 +1,57 @@
+public class Main  // Главный класс, он всегда есть, ты всегда в нём работаешь
+{ 
+  public static void main (String[] args) // Исполнение кода начинается с функции main 
+  {
+    Student F = new Student(); // вызов Конструктора
+    
+    // Student - это класс (Тип данных (то есть как инт,дабл)) int, string, double, float, Student
+    //F обратилась в класс Стьюдент и там находится
+    // мы объявили переменную F класса Student
+    // инициализируешь поля переменной ( заполнение полей)
+    F.name = "Petya";
+    F.family_name = "Petrov";
+    F.grade1 = 4;
+    F.grade2 = 5;
+    F.grade3 = 7; 
+    
+
+    System.out.println(F.name);
+    System.out.println(F.family_name);
+    System.out.println(F.grade1);
+    System.out.println(F.grade2);
+    System.out.println(F.grade3);
+
+    Student C = new Student(); //new - выделение памяти, Student() - вызов конструктора 
+
+    C.name = "Michael";
+
+    C.family_name = "Kuznetsov";
+
+    C.grade1 = 5;
+
+    C.grade2 = 5;
+
+    C.grade3 = 5;
+
+    System.out.println(C.name);
+    System.out.println(C.family_name);
+    System.out.println(C.grade1);
+    System.out.println(C.grade2);
+    System.out.println(C.grade3);
+
+  }
+
+  //класс студент, который находится внутри главного класса
+  //static class = тип , получается создали класс Student
+  static class Student
+  
+  {
+    String name; //  поле
+    String family_name; //поле  
+    int grade1; // поле
+    int grade2; // поле
+    int grade3; // полe
+    // Невидимый конструктор !!!
+      
+  } 
+}
