@@ -1,0 +1,82 @@
+class Main {
+
+  // Тут мы создаем функцию public static class Student, в которой хранятся аргументы name, familyname,grade1,grade2,grade3
+
+  public static class Student{ // Создали функцию, которая считает наши  данные
+    
+  String name; // Мы тут создали поле name
+
+  String familyname; // Мы тут создали поле familyname
+
+  int grade1; // Мы тут создали поле grade1
+
+  int grade2; // Мы тут создали поле grade2
+
+  int grade3; //  Мы тут создали поле grade3
+
+  }
+
+  public static int Summa(int a, int b, int c)
+  {
+    
+    int m_s = a+b+c; 
+
+    int cnt = 3;
+
+    int SrZn = m_s / cnt;
+
+    return SrZn;
+
+  }
+  public static void main(String[] args) {
+  
+    // ОСНОВНОЙ ВЫЗОВ И КОНЕЦ ПРОГРАММЫ ПРОИСХОДИТ ТУТ
+
+    //тут происходит основная часть программы, все вычисления
+
+  Student misha = new Student(); // вызвали функцию Student
+  
+  misha.name = "Миша";
+
+  misha.familyname = "Кузнецов";
+
+  misha.grade1 = 10;
+
+  misha.grade2 = 10;
+
+  misha.grade3 = 10;
+
+  Student KateDrew = new Student();
+
+  KateDrew.name = "Katya";
+
+  KateDrew.familyname = "Petrova";
+
+  KateDrew.grade1 = 9;
+
+  KateDrew.grade2 = 7;
+
+  KateDrew.grade3 = 8;
+
+  int Srk = Summa(KateDrew.grade1,KateDrew.grade2,KateDrew.grade3);
+
+  System.out.println("KATYA Среднее значение: " + Srk);
+
+  System.out.println(misha.name);
+
+  System.out.println(misha.familyname);
+  
+  System.out.println(misha.grade1);
+  
+  System.out.println(misha.grade2);
+  
+  System.out.println(misha.grade3);
+
+  int Srm = Summa(misha.grade1,misha.grade2,misha.grade3);
+
+  System.out.println("MISHA Среднее значение: " + Srm);
+
+  System.out.println(Srm - Srk);
+  }
+
+}
