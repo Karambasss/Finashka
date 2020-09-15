@@ -1,51 +1,55 @@
 /*
-По данному натуральному n вычислите значение n!.
+Числа следует выводить через пробел. Все числа целые, по модулю не больше 231-1. Количество элементов массива не превышает 10000.
+Дан массив, состоящий из целых чисел. Напишите программу, которая выводит те элементы массива, которые являются чётными числами.
 
 Входные данные
-Вводится единственное число n.
+Сначала задано число $N$ — количество элементов в массиве ($1 \le N \le 100$). Далее через пробел записаны $N$ чисел — элементы массива. Массив состоит из целых чисел.
 
 Выходные данные
-Необходимо вывести  значение n!.
+Необходимо вывести все четные элементы массива (то есть те элементы, которые являются четными числами).
 
 Примеры
 входные данные
-2
+5
+1 2 3 4 5
+
 выходные данные
-2
+2 4 
 */
 
-import java.util.Scanner;
+import  java.util.Scanner;
 
 class Main{
 
-  public static int Fac(int x){
-    
-    int factorial = 1;
-    
-    
-    
-    for (int i = 1; i <= x; i = i + 1)
-    {
-      
-    factorial = factorial * i;
+  public static void main(String[] args){
 
-    }   
-    
-    return factorial;
+    Scanner SS = new Scanner(System.in);
 
+    int n = SS.nextInt();
+
+    int [] f = new int [n];
+
+    for (int i = 0; i < n; i = i + 1){
+      int zn = SS.nextInt();
+      f[i] = zn;
+
+    }
+
+    for (int i = 0; i < n; i = i + 1){
+      if (f[i] % 2 == 0){
+        System.out.print(f[i]+" ");
+
+      }
+
+
+    }
+
+
+    //for (int i = 0; i < n ; i = i + 1){
+      //System.out.println(f[i]);
+      //System.out.println(" ");
+    //}
   }
 
-  public static void main(String[] args)
-  {
-    Scanner IO = new Scanner(System.in);
-    
-    int a = IO.nextInt();
 
-    int otvet = Fac(a);
-
-    System.out.println(otvet);
-     
-    return ;
-  }
 }
-

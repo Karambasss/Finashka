@@ -1,32 +1,48 @@
+/*
+Дан массив, состоящий из целых чисел. Напишите программу, которая подсчитывает количество положительных чисел среди элементов массива.
+
+Входные данные
+Сначала задано число $N$ — количество элементов в массиве ($1 \le N \le 10000$). Далее через пробел записаны $N$ чисел — элементы массива. Массив состоит из целых чисел.
+
+Выходные данные
+Необходимо единственное число - количество положительных элементов в массиве.
+
+Примеры
+входные данные
+5
+1 2 3 -1 -4
+
+выходные данные
+3
+*/
+
 import java.util.Scanner;
 
+class Main{
 
-class Main
-{
+  public static void main(String[] args){
 
-  public static int f(){
-    return 0;
-  }
-  
-  public static void main(String[] args)
-  {
-    
-    Scanner TT = new Scanner(System.in);
-    int n = TT.nextInt();
-    // skanner для ручного ввода
-    
-    int sum = 0;
-    int otv =0;    
-    for (int i = 1; i <= n; i = i + 1)
-    {
-      int digit = i;
+    Scanner SS = new Scanner(System.in);
 
-      sum = digit * digit;
+    int t = SS.nextInt();
 
-      otv = otv + sum;
+    int [] lst = new int [t];// указали размерность lst(то есть в ней 5 находится 5 элементов)
+    int cnt = 0;
+
+    for (int i = 0; i < t; i = i + 1){
+      int ls = SS.nextInt();
+      lst[i] = ls; 
     }
-    System.out.println(otv);
-    return ;
+
+    for (int i = 0; i < t; i = i + 1){
+      if (lst[i] > 0){
+        cnt = cnt + 1;
+      }
+    }
+    System.out.println(cnt);
+
   }
+
+
 
 }
