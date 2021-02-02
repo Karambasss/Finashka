@@ -7,7 +7,7 @@ public class Main {
         Scanner Scan = new Scanner(System.in);
         System.out.println("Введите вектор и получите длину вектора!!");
         Vector vector1 = new Vector(Scan.nextInt(),Scan.nextInt(),Scan.nextInt());
-        vector1.getKoren();
+        System.out.println("Длина вектора равна : " + vector1.getKoren());
 
         System.out.println("Введите второй вектор и получите скалярное произведение векторов!!");
         Vector vector2 = new Vector(Scan.nextInt(),Scan.nextInt(),Scan.nextInt());
