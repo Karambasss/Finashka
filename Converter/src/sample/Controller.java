@@ -292,7 +292,7 @@ public class Controller {
                 }
             }
 
-            else if (degrees == 'K' || degrees == 'K'){
+            else if (degrees == 'K' || degrees == 'k'){
 
                 try{
 
