@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="441.0" prefWidth="508.0">
+         <children>
+            <VBox prefHeight="442.0" prefWidth="233.0" spacing="10">
+               <children>
+                  <TextField fx:id="surname" />
+                  <TextField fx:id="name" prefHeight="26.0" prefWidth="281.0" />
+                  <TextField fx:id="age" />
+                  <Button fx:id="submit" mnemonicParsing="false" onAction="#Submit_click" prefHeight="26.0" prefWidth="47.0" text="Insert" />
+                  <Button fx:id="select_btn" mnemonicParsing="false" onAction="#Select_click" text="Select" />
+               </children>
+            </VBox>
+            <VBox prefHeight="442.0" prefWidth="351.0">
+               <children>
+                  <Label text="Данные по указанной таблице" />
+                  <TextArea fx:id="textBD" prefHeight="449.0" prefWidth="314.0" />
+               </children></VBox>
+         </children>
+      </HBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
