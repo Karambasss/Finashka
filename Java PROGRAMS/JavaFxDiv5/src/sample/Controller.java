@@ -37,14 +37,6 @@ public class Controller {
                 textField.clear();
                 textField1.clear();
             }
-//            else if (firstNum == secondNum && firstNum >= 10 && secondNum >= 10){
-//                if (firstNum % 5 == 0){
-//                    resultField.setVisible(true);
-//                    resultField.setText("Ответ: " +  firstNum);
-//                }
-//                textField.clear();
-//                textField1.clear();
-//            }
             else if (firstNum >= secondNum && firstNum >= 10 && secondNum >= 10){
                 resultField.clear();
                 ArrayList<Integer> resultList = new ArrayList<>();
@@ -73,6 +65,12 @@ public class Controller {
             }
             else if (secondNum < 0){
                 Alert alert = new Alert(Alert.AlertType.ERROR,"Введите положительное число!");
+                alert.showAndWait();
+                textField.clear();
+                textField1.clear();
+            }
+            else if (secondNum == 0 || firstNum == 0){
+                Alert alert = new Alert(Alert.AlertType.ERROR,"Введите не нулевое число!");
                 alert.showAndWait();
                 textField.clear();
                 textField1.clear();
