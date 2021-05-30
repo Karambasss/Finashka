@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="416.0" prefWidth="560.0">
+         <children>
+            <Button fx:id="do_btn" layoutX="190.0" layoutY="240.0" mnemonicParsing="false" onAction="#getDiv5" text="Button" />
+            <VBox layoutX="100.0" layoutY="65.0" prefHeight="108.0" prefWidth="252.0">
+               <children>
+                  <Label text="Ввод 1 границы диапазона" />
+                  <TextField fx:id="textField" />
+                  <Label text="Ввод 2 границы диапазона" />
+                  <TextField fx:id="textField1" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <Label layoutX="86.0" layoutY="14.0" text="Помните, ввод диапазона в обратном порядке: (100; 20)" />
+            <TextArea layoutX="248.0" layoutY="186.0" prefHeight="173.0" prefWidth="298.0"  fx:id="resultField" visible="false"/>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
