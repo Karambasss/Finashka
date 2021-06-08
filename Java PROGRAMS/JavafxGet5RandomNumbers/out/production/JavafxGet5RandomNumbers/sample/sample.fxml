@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="534.0">
+         <children>
+            <Button fx:id="click_btn" layoutX="241.0" layoutY="235.0" mnemonicParsing="false" onAction="#clickAction" text="Button" />
+            <TextField fx:id="first_fld" layoutX="92.0" layoutY="165.0" />
+            <TextField fx:id="sec_fld" layoutX="293.0" layoutY="165.0" />
+            <Label layoutX="49.0" layoutY="138.0" text="Введите левую границу диапазона" />
+            <Label layoutX="367.0" layoutY="138.0" text="Введите правую границу диапазона" />
+            <TextArea fx:id="result_area" layoutX="193.0" layoutY="301.0" text="Ваш ответ будет тут!" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
