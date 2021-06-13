@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="447.0" prefWidth="559.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="370.0" prefWidth="559.0">
+         <children>
+            <TextArea fx:id="path_fld" layoutX="92.0" layoutY="54.0" prefHeight="42.0" prefWidth="339.0" />
+            <Label layoutX="158.0" layoutY="26.0" text="Введите сюда полный путь до папки. " />
+            <TextArea fx:id="result_fld" layoutX="4.0" layoutY="188.0" prefHeight="94.0" prefWidth="552.0" text="Ответ: " />
+            <Button layoutX="236.0" layoutY="141.0" mnemonicParsing="false" onAction="#clickBtn" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
