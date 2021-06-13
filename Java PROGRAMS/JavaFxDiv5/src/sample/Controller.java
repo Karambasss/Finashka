@@ -37,7 +37,7 @@ public class Controller {
                 textField.clear();
                 textField1.clear();
             }
-            else if (firstNum >= secondNum && firstNum >= 10 && secondNum >= 10){
+            else if (firstNum >= secondNum && firstNum >= 10 && secondNum >= 10 && firstNum < 100 && secondNum < 100){
                 resultField.clear();
                 ArrayList<Integer> resultList = new ArrayList<>();
                 for (int i = firstNum; i >= secondNum; i--){
@@ -56,7 +56,7 @@ public class Controller {
                 textField.clear();
                 textField1.clear();
             }
-            //проверка на однозначность числа и его положительность
+            //проверка на не однозначность числа и его положительность
             else if ((firstNum > 0 && firstNum < 10)  || (secondNum > 0 && secondNum < 10)){
                 Alert alert = new Alert(Alert.AlertType.ERROR,"Введите двузначное число!");
                 alert.showAndWait();
@@ -71,6 +71,12 @@ public class Controller {
             }
             else if (secondNum == 0 || firstNum == 0){
                 Alert alert = new Alert(Alert.AlertType.ERROR,"Введите не нулевое число!");
+                alert.showAndWait();
+                textField.clear();
+                textField1.clear();
+            }
+            else{
+                Alert alert = new Alert(Alert.AlertType.ERROR, "Вы ввели число/а > 100");
                 alert.showAndWait();
                 textField.clear();
                 textField1.clear();
