@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="389.0" prefWidth="613.0">
+         <children>
+            <Button layoutX="281.0" layoutY="242.0" mnemonicParsing="false" text="Button" onAction="#clickMe"/>
+            <TextField layoutX="52.0" layoutY="130.0" fx:id="a_field"/>
+            <TextField layoutX="233.0" layoutY="130.0" fx:id="b_field"/>
+            <TextField layoutX="419.0" layoutY="130.0" fx:id="c_field"/>
+            <Label layoutX="88.0" layoutY="105.0" prefHeight="18.0" prefWidth="76.0" text="Введите a" />
+            <Label layoutX="270.0" layoutY="105.0" text="Введите b" />
+            <Label layoutX="466.0" layoutY="105.0" text="Введите c" />
+            <TextField layoutX="233.0" layoutY="318.0" text="Ответ: " fx:id="res_field"/>
+            <Label layoutX="191.0" layoutY="46.0" text="Вычисление объема параллелепипеда" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
