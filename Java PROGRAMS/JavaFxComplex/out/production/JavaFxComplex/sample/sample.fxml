@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="460.0" prefWidth="702.0">
+         <children>
+            <TextField fx:id="im_fld" layoutX="215.0" layoutY="138.0" prefHeight="26.0" prefWidth="91.0" />
+            <TextField fx:id="re_fld" layoutX="51.0" layoutY="138.0" prefHeight="26.0" prefWidth="126.0" />
+            <Label layoutX="202.0" layoutY="112.0" text="Введите im для 1 числа" />
+            <Label layoutX="39.0" layoutY="112.0" text="Введите re для 1 числа" />
+            <Label layoutX="289.0" layoutY="34.0" />
+            <Button layoutX="176.0" layoutY="230.0" mnemonicParsing="false" onAction="#plusClick" text="Button" />
+            <Button layoutX="294.0" layoutY="230.0" mnemonicParsing="false" onAction="#minusClick" text="Button" />
+            <Button layoutX="413.0" layoutY="230.0" mnemonicParsing="false" onAction="#multipClick" text="Button" />
+            <Label layoutX="174.0" layoutY="203.0" text="Сложение" />
+            <Label layoutX="290.0" layoutY="203.0" text="Вычитание" />
+            <Label layoutX="415.0" layoutY="203.0" text="Умножение" />
+            <TextField fx:id="res_fld" layoutX="150.0" layoutY="340.0" prefHeight="26.0" prefWidth="387.0" text="Ответ: " />
+            <TextField fx:id="re1_fld" layoutX="393.0" layoutY="138.0" prefHeight="26.0" prefWidth="91.0" />
+            <TextField fx:id="im1_fld" layoutX="567.0" layoutY="138.0" prefHeight="26.0" prefWidth="102.0" />
+            <Label layoutX="376.0" layoutY="112.0" text="Введите re для 2 числа" />
+            <Label layoutX="554.0" layoutY="112.0" text="Введите im для 2 числа" />
+         </children></AnchorPane>
+   </children>
+</GridPane>
