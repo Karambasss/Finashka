@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="499.0" prefWidth="678.0">
+         <children>
+            <Button layoutX="313.0" layoutY="339.0" mnemonicParsing="false" text="Button" onAction="#clickMe"/>
+            <TextField fx:id="res_fld" layoutX="75.0" layoutY="385.0" prefHeight="26.0" prefWidth="528.0" text="Ответ: " />
+            <TextField fx:id="path_fld" layoutX="117.0" layoutY="134.0" prefHeight="26.0" prefWidth="428.0" />
+            <Label layoutX="249.0" layoutY="108.0" text="Введите путь до файла." />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
