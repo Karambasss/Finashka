@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="477.0" prefWidth="623.0">
+         <children>
+            <Label layoutX="246.0" layoutY="28.0" text="Бинарное дерево поиска" />
+            <TextField fx:id="insert_fld" layoutX="23.0" layoutY="98.0" prefHeight="26.0" prefWidth="219.0" />
+            <TextArea fx:id="result_fld" layoutX="38.0" layoutY="227.0" prefHeight="200.0" prefWidth="556.0" text="Ответ: " />
+            <Button layoutX="92.0" layoutY="135.0" mnemonicParsing="false" onAction="#clickToInsert" text="Button" />
+            <Button layoutX="506.0" layoutY="135.0" mnemonicParsing="false" onAction="#clickToSearch" text="Button" />
+            <Label layoutX="52.0" layoutY="69.0" text="Добавить значение в дерево" />
+            <TextField fx:id="search_fld" layoutX="413.0" layoutY="99.0" prefHeight="26.0" prefWidth="219.0" />
+            <Label layoutX="433.0" layoutY="69.0" text="Найти по введенному значению" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
