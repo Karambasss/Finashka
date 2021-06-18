@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="430.0" prefWidth="688.0">
+         <children>
+            <Label layoutX="299.0" layoutY="53.0" text="Факториал" />
+            <Label layoutX="207.0" layoutY="147.0" text="Введите число, для нахождения факториала" />
+            <TextField fx:id="a_fld" layoutX="207.0" layoutY="181.0" prefHeight="26.0" prefWidth="244.0" />
+            <TextField fx:id="result_fld" layoutX="203.0" layoutY="331.0" prefHeight="26.0" prefWidth="252.0" text="Ответ: " />
+            <Button layoutX="303.0" layoutY="260.0" mnemonicParsing="false" onAction="#clickMe" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
