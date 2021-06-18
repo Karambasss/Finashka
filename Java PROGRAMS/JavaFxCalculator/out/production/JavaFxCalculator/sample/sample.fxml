@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="424.0" prefWidth="601.0">
+         <children>
+            <Label layoutX="227.0" layoutY="34.0" text="Калькулятор" />
+            <TextField fx:id="a_fld" layoutX="50.0" layoutY="100.0" />
+            <Label layoutX="97.0" layoutY="72.0" text="Введите a" />
+            <TextField fx:id="b_fld" layoutX="323.0" layoutY="100.0" />
+            <Label layoutX="369.0" layoutY="72.0" text="Введите b" />
+            <Button layoutX="34.0" layoutY="199.0" mnemonicParsing="false" onAction="#plusBtn" text="Сложение" />
+            <Button layoutX="172.0" layoutY="199.0" mnemonicParsing="false" onAction="#minusBtn" text="Вычитание" />
+            <Button layoutX="325.0" layoutY="199.0" mnemonicParsing="false" onAction="#multipBtn" text="Умножение" />
+            <Button layoutX="472.0" layoutY="199.0" mnemonicParsing="false" onAction="#divisionBtn" text="Деление" />
+            <Label layoutX="189.0" layoutY="264.0" />
+            <Label layoutX="325.0" layoutY="264.0" />
+            <Label layoutX="466.0" layoutY="264.0" />
+            <TextField fx:id="result_fld" layoutX="137.0" layoutY="298.0" prefHeight="26.0" prefWidth="279.0" text="Ответ: " />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
