@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -27,18 +28,25 @@ public class Controller {
     public void clickToAuth(){
         String inputLogin = login_fld.getText();
         String inputPassword = pass_fld.getText();
+        PersonalWindow personalWindow = new PersonalWindow();
+        Stage old_stage = (Stage) pass_fld.getScene().getWindow();
         if (inputLogin.equals(login) && inputPassword.equals(password)){
             try {
-                new PersonalWindow();
+                personalWindow.start(new Stage());
+                old_stage.close();
             }
             catch (IOException exception){
                 Alert alert = new Alert(Alert.AlertType.ERROR,"Возникла ошибка!");
                 alert.showAndWait();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
         else {
             Alert alert = new Alert(Alert.AlertType.ERROR,"Ошибка входа!");
             alert.showAndWait();
         }
+        login_fld.clear();
+        pass_fld.clear();
     }
 }
