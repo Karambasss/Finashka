@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="441.0" prefWidth="678.0">
+         <children>
+            <Label layoutX="239.0" layoutY="28.0" text="Сумма первых n членов ряда" />
+            <Label layoutX="260.0" layoutY="110.0" text="Задайте количество n" />
+            <TextField fx:id="n_fld" layoutX="246.0" layoutY="150.0" />
+            <TextField fx:id="result_fld" layoutX="123.0" layoutY="326.0" prefHeight="26.0" prefWidth="453.0" text="Ответ: " />
+            <Button layoutX="295.0" layoutY="245.0" mnemonicParsing="false" onAction="#clickMe" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
