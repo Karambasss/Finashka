@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="455.0" prefWidth="675.0">
+         <children>
+            <Label layoutX="22.0" layoutY="21.0" text="Вычисления сопротивления электрической цепи, состоящей из двух последовательно соединенных сопротивлений" />
+            <TextField fx:id="r1_fld" layoutX="137.0" layoutY="155.0" />
+            <TextField fx:id="r2_fld" layoutX="344.0" layoutY="155.0" />
+            <Label layoutX="204.0" layoutY="119.0" text="R1" />
+            <Label layoutX="404.0" layoutY="119.0" text="R2" />
+            <Button layoutX="292.0" layoutY="274.0" mnemonicParsing="false" onAction="#clickMe" text="Button" />
+            <TextField fx:id="result_fld" layoutX="244.0" layoutY="377.0" text="Ответ: " />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
