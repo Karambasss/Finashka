@@ -20,7 +20,7 @@ public class Controller {
         else {
             double sum = 1;
             double re = 1;
-            for (int i = 1; i <= n; i++){
+            for (int i = 1; i < n; i++){
                 sum += 1 / (re * 2);
                 System.out.println(sum);
                 re++;
@@ -31,10 +31,17 @@ public class Controller {
 
     @FXML
     public void clickMe(){
+        result_fld.clear();
         try {
             int n = Integer.parseInt(n_fld.getText());
             double result = sumOfTheRow(n);
-            result_fld.setText("Ответ: " + result);
+            if (result == -1){
+                Alert alert = new Alert(Alert.AlertType.ERROR, "Вы допустили ошибку!");
+                alert.showAndWait();
+            }
+            else {
+                result_fld.setText("Ответ: " + result);
+            }
         }
         catch (NumberFormatException exception){
             Alert alert = new Alert(Alert.AlertType.ERROR,"Что-то пошло не так!");
