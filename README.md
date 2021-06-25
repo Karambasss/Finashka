@@ -1,4 +1,4 @@
-# Finashka
-Pi19-4 KuznetsovM
-JAVA
+# Сборник учебных материалов, сделанных мной за годы обучения в Финансовом Университете при Правительстве РФ.
+![image](https://user-images.githubusercontent.com/55315647/123461206-7adbec80-d5f1-11eb-96ce-8daeb5b4ceb6.png)
+## Автор - Кузнецов Михаил 
 
