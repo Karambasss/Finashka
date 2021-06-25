@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="552.0" prefWidth="688.0">
+         <children>
+            <Label layoutX="266.0" layoutY="40.0" text="Счетчик слов в тексте" />
+            <TextArea fx:id="text_fld" layoutX="65.0" layoutY="83.0" prefHeight="200.0" prefWidth="576.0" />
+            <TextArea fx:id="result_fld" layoutX="60.0" layoutY="338.0" prefHeight="200.0" prefWidth="586.0" text="Ответ:" />
+            <Button layoutX="318.0" layoutY="300.0" mnemonicParsing="false" onAction="#clickMe" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
