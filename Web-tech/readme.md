@@ -51,7 +51,7 @@
 Обязательно сделать стилизацию опроса при помощи CSS.
 Для решения задачи не использовать фреймворки.
  
-Пример:
+Пример:<br/>
 ![image](https://user-images.githubusercontent.com/55315647/134499156-414e9c6c-9360-416c-8cd6-970cdcde716e.png)
 
 ![image](https://user-images.githubusercontent.com/55315647/134499171-7bded61a-bcfa-4602-b9a4-8472dbf13edc.png)
