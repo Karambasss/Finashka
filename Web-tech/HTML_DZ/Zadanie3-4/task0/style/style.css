@@ -1,0 +1,93 @@
+ .form{
+            background-color: white;
+            width: 1150px;
+            height: 830px;
+            position: relative;
+            left: 200px;
+        }
+
+body{
+    background-color: aqua
+}
+.pos{
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+.pos1{
+    position: relative;
+    text-align: right;
+    right: 365px;
+    top: 25px;
+}
+.pos2{
+    position: relative;
+    text-align: left;
+    left: 534px;
+    top: 7px;
+}
+.pos2_1{
+    position: relative;
+    text-align: left;
+    left: 384px;
+    top: 25px;
+}
+.pos3{
+    position: relative;
+    text-align: left;
+    left: 470px;
+    top: 25px;  
+}
+.pos4{
+    position: relative;
+    text-align: left;
+    left: 254px;
+    top: 25px;
+}
+.pos5{
+    position: relative;
+    text-align: left;
+    left: 149px;
+}
+.pos6{
+    top: 10px;
+    position: relative;
+    text-align: right;
+    right: 575px;
+}
+.pos7{
+    position: relative;
+    text-align: right;
+    right: 370px;   
+}
+.chbox{
+    height: 75px;
+    width: 250px;
+    
+}
+.chbox1{
+    width: 250px;
+}
+
+.pos1_6{
+    position: relative;
+    text-align: left;
+    top: 25px;
+}
+
+.pos9{
+    top: 25px;
+    position: relative;
+    text-align: right;
+    right: 290px; 
+}
+.areabx{
+    height: 80px;
+    vertical-align: top
+}
+.pos10{
+    top: 50px;
+    position: relative;
+    text-align: center;
+}
+
