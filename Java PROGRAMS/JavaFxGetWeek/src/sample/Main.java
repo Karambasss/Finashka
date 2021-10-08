@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 /**
  * Главный класс, который запускает javaFx и задает FXML
  * @author Кузнецов Михаил Пи19-4

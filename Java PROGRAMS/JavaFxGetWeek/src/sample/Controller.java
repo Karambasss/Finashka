@@ -9,6 +9,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
+import java.time.temporal.IsoFields;
 import java.util.Date;
 
 /**
@@ -45,7 +46,6 @@ public class Controller {
         byte result = (byte) Math.round((double)(yourDateInMillis - startInMillis) / timeOfTheWeekInMillis); // разница от времени ввденным пользователем - старт время / 1 неделю в мсекундах и округляем в большую сторону.
         return result;
     }
-
     /**
      * Данный метод обрабатывает нажатие на кнопку, отдает во view пользователя номер недели.
      */
@@ -54,10 +54,14 @@ public class Controller {
 
         LocalDate date = yourDate.getValue(); // получаем дату, которую пользователь ввел.
 
+
+        int weekNumber = date.get(IsoFields.WEEK_OF_WEEK_BASED_YEAR);
+
         int yourYear = date.getYear(); // год, который пользователь ввел по дате находим.
+
 
         byte yourWeek = getYourWeek(yourYear, date); // получаем номер недели.
 
-        resultField.setText("Ответ: " + yourWeek); // вставляем в resultField.
+        resultField.setText("Ответ: " + weekNumber); // вставляем в resultField.
     }
 }
