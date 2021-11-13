@@ -1,0 +1,81 @@
+h1.title {
+  font: normal 24px/1.5 "Open Sans", sans-serif;
+  color: #a61105;
+}
+
+div.container {
+  color: #a61105;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.small-blue-square {
+  width: 20px;
+  height: 20px;
+  background-color: #e68cea;
+}
+
+.big-red-square {
+  width: 300px;
+  height: 300px;
+  background-color: #f18484;
+}
+
+.frame {
+  transition: 0.2s;
+}
+.frame:hover {
+  transform: rotate3d(0.5, 0.3, 0, 30deg);
+}
+
+.dialog-button, .cancel, .confirm {
+  box-sizing: border-box;
+  color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  padding: 12px 40px;
+  cursor: pointer;
+}
+
+.confirm {
+  background-color: #87bae1;
+  float: left;
+}
+
+.cancel {
+  background-color: #e4749e;
+  float: right;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  padding: 15px;
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #444;
+}
+
+.container {
+  width: 800px;
+}
+
+.column-half {
+  width: 400px;
+}
+
+.column-fifth {
+  width: 160px;
+}
+
+a {
+  padding: 10px 15px;
+  background-color: #2196f3;
+}
+a:hover {
+  background-color: #0c7cd5;
+}
